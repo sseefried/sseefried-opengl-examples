@@ -1,0 +1,26 @@
+Name:                sseefried-opengl-examples
+Version:             0.1.0
+License:             MIT
+License-file:        LICENSE
+Author:              Sean Seefried
+Maintainer:          sean.seefried@gmail.com
+Build-Type:          Simple
+Cabal-Version:       >=1.6
+Stability:           experimental
+Category:            Graphics
+Homepage:            http://seanseefried.com
+Bug-reports:         sean.seefried@gmail.com
+Description:         Self contained OpenGL examples
+
+ource-repository head
+        type:           git
+        location:       https://github.com/sseefried/sseefried-opengl-examples
+
+Executable vertex-arrays
+  Build-depends:
+        base        == 4.6.*,
+        OpenGL      == 2.9.*,
+        GLUT        == 2.5.*,
+        array       == 0.4.*
+  Main-is:      Main.hs
+  hs-source-dirs: src/vertex-array
